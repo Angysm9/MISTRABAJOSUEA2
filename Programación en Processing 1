@@ -1,0 +1,17 @@
+void setup(){ // setup se ejecuta una vez al inicio
+size(600,600); //tamaño del lienzo
+background(190,90,200); //color del lienzo
+}
+
+void draw(){ // draw se ejecuta en bucle
+fill(120,160,100); //color de relleno de la figura
+ellipse(100,100,80,80); //circulo
+fill(240,51,113); //color de relleno de la figura
+rect(150,140,50,50); //cuadrado
+line(0,400,600,400); //linea
+fill(70,90,180); //color de relleno de la figura
+triangle(190,300,262,80,374,300); //triangulo
+fill(255,255,255); //color de relleno del texto
+textSize(20); //tamaño del texto
+  text("Primero haz lo que puedas para después hacer lo que quieres :)",20,450); //texto y poscicion del texto
+}
