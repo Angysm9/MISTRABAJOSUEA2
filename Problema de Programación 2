@@ -1,4 +1,5 @@
-int y=0; //declaro la variable de arreglo y
+//el código se inicará una vez que se presione el botón de "ejecutar" ubicado en la parte superior izquierda de proccesing y para dejar de proyectar presionando el botón "esc" del teclado
+int y=0; //declaro la variable de arreglo "y"
 void setup () { //se ejecuta una vez en el inicio
   size (950,950); //tamaño del lienzo
   frameRate(20); //cuadros por segundo para la animación//velocidad del círculo
