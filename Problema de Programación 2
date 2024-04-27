@@ -1,0 +1,33 @@
+int y=0; //declaro la variable de arreglo y
+void setup () { //se ejecuta una vez en el inicio
+  size (950,950); //tamaño del lienzo
+  frameRate(20); //cuadros por segundo para la animación//velocidad del círculo
+  fullScreen(); //abrir en pantalla completa
+  noCursor(); //sin mouse visible en la pantalla
+}
+
+void draw (){ //draw se ejecuta en bucle
+  background(184,75,149); //color del fondo
+  PImage img; //declaro variable de imágen
+ img= loadImage("C:/Users/angel/OneDrive/Documents/UAM/24-I/Dr. Hernani/EJERCICIOS PROGRAMACION/tarea2/4cdb4a2f-760c-4420-9430-8964021ddc6e.jpg"); //ruta de acceso de la imágen
+image(img,280,190); //poscicion de la imágen
+
+  fill(37,122,181); // color de relleno de la ellipse
+ellipse(0+y%1450, 100,180,180); //animación del círculo//arrego y//la ellipse se detiene al llegar a y,1450 y se repite el bucle
+y=y+1;
+
+  fill(189,71,0); //color de relleno del texto 
+textSize(18); //tamaño del texto
+  text("SALA DE LOS NUEVOS",-85+y%1450, 100); //texto y poscicion del texto
+  textSize(18); //tamaño del texto
+  text("ARTISTAS",-50+y%1450,125); //texto y poscicion del texto//arrego y//el texto se detiene al llegar a y,1450 y se repite el bucle
+  y=y+1;
+ 
+
+  fill(200,200,200); //color de relleno del texto
+textSize(15); //tamaño del texto
+  text("El Kiosco de Lerma.",1150,700); //texto y poscicion del texto
+    text("Angy Sanchez.",1150,715); //texto y poscicion del texto
+      text("Del 10 al 29 de septiembre",1150,735); //texto y poscicion del texto
+  text("del 2024",1150,750); //texto y poscicion del texto
+}
